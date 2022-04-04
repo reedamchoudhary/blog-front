@@ -1,0 +1,52 @@
+:root {
+  --darkBgColor: #232323;
+  --lightBgColor: #dddddd;
+}
+
+.App {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 900px 500px;
+  background-attachment: fixed;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  
+}
+
+.loader-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(247, 245, 242, 01);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E9A1B2;
+  border-radius: 10px;
+}
