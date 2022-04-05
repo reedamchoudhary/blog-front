@@ -30,12 +30,6 @@ function App() {
     purple: "#FFD22E",
   };
 
-  const override = `
-    display: block;
-    margin: 0 auto;
-    border-color: red;
-  `;
-
   useEffect(() => {
     Data(setData);
   }, []);

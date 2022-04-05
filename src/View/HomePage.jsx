@@ -1,14 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./CommonScreen.css";
-// import { Heading } from "@chakra-ui/react";
 import CenteredFlex from "../Components/CenteredFlex";
 import { UserContext } from "./../App";
 import Card from "../Components/Card";
-import NavigationArrows from "../Components/NavigationArrows";
 import Carousel, { CarouselItem } from "../Components/Carousel";
 
 const HomePage = () => {
-  const { data, theme } = useContext(UserContext);
+  const { data } = useContext(UserContext);
   const [firstGrid, setFirstGrid] = useState({
     start: 0,
     end: 0,
@@ -19,7 +17,6 @@ const HomePage = () => {
   });
   const [firstGridArray, setFirstGridArray] = useState([]);
   const [secondGridArray, setSecondGridArray] = useState([]);
-  const [horizontalCarouselClass, setHorizontalCarouselClass] = useState("");
 
   useEffect(() => {
     let half = Math.ceil(data?.length / 2);

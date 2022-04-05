@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { FaUserAstronaut } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { FiTwitter } from "react-icons/fi";
@@ -7,7 +7,7 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { UserContext } from "../App";
 
 const Social = () => {
-  const { colors, theme, showSocial, setShowSocial } = useContext(UserContext);
+  const { colors, showSocial, setShowSocial } = useContext(UserContext);
 
   const socialColor = colors.pink;
 

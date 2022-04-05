@@ -9,7 +9,7 @@ import CenteredFlex from "./CenteredFlex";
 import { UserContext } from "../App";
 
 const NavigationArrows = (props) => {
-  const { colors, theme, data } = useContext(UserContext);
+  const { colors, theme } = useContext(UserContext);
   const [shadowColor, setShadowColor] = useState("");
 
   const {

@@ -15,7 +15,6 @@ const SinglePost = () => {
 
   const [post, setPost] = useState("");
   const [firstGridArray, setFirstGridArray] = useState([]);
-  const [horizontalCarouselClass, setHorizontalCarouselClass] = useState("");
   const [firstGrid, setFirstGrid] = useState({
     start: 0,
     end: 0,
