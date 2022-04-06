@@ -17,7 +17,7 @@ const Card = (props) => {
     w,
     minHeight,
     hover = true,
-    headingFont = "23px",
+    headingFont = "110%",
     lineHeight,
   } = props;
 

@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import { UserContext } from "../App";
 import CenteredFlex from "./CenteredFlex";
 import { BiPlanet } from "react-icons/bi";
+import "./Components.css";
 
 const Page = (props) => {
   const { theme, colors } = useContext(UserContext);
@@ -38,7 +39,12 @@ const Page = (props) => {
         >
           <i>{post.Date}</i> <i>{post.Engagement} mins read</i>
         </CenteredFlex>
-        <Text>{post.postBody}</Text>
+        <Text
+          className={"post-body"}
+          dangerouslySetInnerHTML={{ __html: post.postBody }}
+        >
+          {/* {post.postBody} */}
+        </Text>
         <CenteredFlex
           justifyContent={"space-between"}
           w={"100%"}
